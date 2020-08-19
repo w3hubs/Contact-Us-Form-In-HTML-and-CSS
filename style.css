@@ -1,0 +1,65 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background: rgb(241, 176, 23);
+	color: #000;
+	line-height: 2;
+	font-family: sans-serif;
+	padding: 1em;
+}
+.container{
+	max-width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 1em;
+}
+.wrapper
+{
+	box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+}
+
+.wrapper > *{
+	padding: 1em;
+}
+.company-info{
+	background: rgb(241, 176, 23);
+}
+.company-info h3{
+text-align: center;
+}
+.conatct{
+	background: #f9feff;
+}
+.conatct form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+.conatct form label{
+  display: block;
+}
+.conatct form p{
+	margin: 0;
+}
+.conatct form .message, .submit-btn{
+	grid-column: 1 / 3;
+}
+.conatct form button, .conatct form input, .conatct form textarea{
+	width: 100%;
+	padding: 1em;
+	border:1px solid #ffcdd2;
+	border-radius: 40px;
+}
+.conatct form button{
+	background: rgb(241, 176, 23);
+	border:0;
+	text-transform: uppercase;
+}
+.conatct form button:hover, .conatct form button:focus{
+	background:#ef9a9a;
+	color: #000;
+	outline: 0;
+	transition: background-color 2s ease-out;
+	cursor: pointer;
+}
